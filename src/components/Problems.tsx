@@ -30,9 +30,7 @@ const Problems = () => {
           {problems.map((problem, index) => <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
               <div className="mb-6">{problem.icon}</div>
               <div className="mb-4">
-                <span className="bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
-                  {problem.audience}
-                </span>
+                
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 font-playfair">
                 {problem.title}
