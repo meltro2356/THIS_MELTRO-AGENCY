@@ -1,3 +1,4 @@
+
 const About = () => {
   return (
     <section className="py-20 bg-gray-50">
@@ -6,7 +7,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                src="/lovable-uploads/f10f6e7e-a2a2-4fb8-80bd-3d621a32c210.png"
                 alt="Fundador da Meltro Agency"
                 className="w-80 h-80 mx-auto rounded-full object-cover shadow-2xl"
               />
