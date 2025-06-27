@@ -1,11 +1,8 @@
-
 import { Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-16">
+  return <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
@@ -17,10 +14,7 @@ const Footer = () => {
               Transformamos agendas vazias em fluxo constante de clientes qualificados.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="bg-purple-600 hover:bg-purple-700 p-3 rounded-full transition-colors"
-              >
+              <a href="#" className="bg-purple-600 hover:bg-purple-700 p-3 rounded-full transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -57,14 +51,12 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Meltro Agency. Todos os direitos reservados.</p>
+          <p>© 2025 Meltro Agency. Todos os direitos reservados.</p>
           <p className="mt-2 text-sm">
             Performance real para negócios que cuidam de vidas.
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
