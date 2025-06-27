@@ -1,3 +1,4 @@
+
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -19,7 +20,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed font-light">
-            <strong>Aumente o faturamento do seu negócio pet ainda esse mês.</strong>
+            Especialistas em tráfego pago para <strong>clínicas veterinárias</strong>, <strong>creches pet</strong> e <strong>serviços premium</strong>. 
+            Performance real para negócios que cuidam de vidas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
