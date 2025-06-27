@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed font-light">
-            Especialistas em tráfego pago para <strong>clínicas veterinárias</strong>, <strong>creches pet</strong> e <strong>serviços premium</strong>. 
+            <strong>Aumente o faturamento do seu negócio pet ainda esse mês.</strong> Especialistas em tráfego pago para <strong>clínicas veterinárias</strong>, <strong>creches pet</strong> e <strong>serviços premium</strong>. 
             Performance real para negócios que cuidam de vidas.
           </p>
           
