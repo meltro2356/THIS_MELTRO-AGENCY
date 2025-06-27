@@ -1,11 +1,14 @@
-import { Instagram } from 'lucide-react';
+
+import { Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+
 const Footer = () => {
-  return <footer className="bg-gray-900 text-white py-16">
+  return (
+    <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div>
             <h3 className="text-3xl font-playfair font-bold mb-4 text-purple-400">
               Meltro Agency
             </h3>
@@ -14,39 +17,21 @@ const Footer = () => {
               Transformamos agendas vazias em fluxo constante de clientes qualificados.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-purple-600 hover:bg-purple-700 p-3 rounded-full transition-colors">
+              <a href="https://instagram.com/meltroagency" target="_blank" rel="noopener noreferrer" className="bg-purple-600 hover:bg-purple-700 p-3 rounded-full transition-colors">
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://facebook.com/meltroagency" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors">
+                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
           
-          <div className="md:col-span-2 flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <Link to="/servicos">
               <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 Nossos Serviços
               </Button>
             </Link>
-          </div>
-          
-          <div>
-            <h4 className="text-xl font-bold mb-6 text-purple-400">Contato</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li>
-                <a href="mailto:contato@meltroagency.com" className="hover:text-white transition-colors">
-                  contato@meltroagency.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+5511999999999" className="hover:text-white transition-colors">
-                  (11) 99999-9999
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  WhatsApp
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         
@@ -57,6 +42,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
