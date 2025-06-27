@@ -1,10 +1,11 @@
+
 import { Target, Zap, Crown, TrendingUp } from 'lucide-react';
 
 const Solutions = () => {
   const solutions = [
     {
       icon: <Target className="h-12 w-12 text-blue-500" />,
-      title: "Funil de Vendas Estratégico",
+      title: "Google Ads Hiperlocal",
       description: "Apareça primeiro quando pesquisam 'veterinário emergência' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
       results: "+250% em consultas de emergência",
       color: "from-blue-400 to-blue-600"
