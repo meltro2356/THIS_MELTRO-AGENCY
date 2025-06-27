@@ -1,4 +1,3 @@
-
 import { Target, Zap, Crown, TrendingUp } from 'lucide-react';
 
 const Solutions = () => {
@@ -19,7 +18,7 @@ const Solutions = () => {
     },
     {
       icon: <Crown className="h-12 w-12 text-purple-500" />,
-      title: "Posicionamento Premium",
+      title: "Funil de vendas personalizado",
       description: "Transformamos seu serviço em desejo. Antes/depois espetaculares, depoimentos exclusivos e estratégias que atraem quem paga pelo melhor.",
       results: "+180% no ticket médio",
       color: "from-purple-400 to-pink-500"
