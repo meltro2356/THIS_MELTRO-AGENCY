@@ -1,11 +1,8 @@
-
 import { Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-16">
+  return <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
@@ -20,9 +17,7 @@ const Footer = () => {
               <a href="https://instagram.com/meltroagency" target="_blank" rel="noopener noreferrer" className="bg-purple-600 hover:bg-purple-700 p-3 rounded-full transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://facebook.com/meltroagency" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
+              
             </div>
           </div>
           
@@ -42,8 +37,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
