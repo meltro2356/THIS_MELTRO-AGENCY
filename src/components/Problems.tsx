@@ -44,9 +44,7 @@ const Problems = () => {
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white inline-block px-8 py-4 rounded-full font-bold text-lg">
-            ⚠️ Cada dia sem ação é receita perdida para sempre
-          </div>
+          
         </div>
       </div>
     </section>;
