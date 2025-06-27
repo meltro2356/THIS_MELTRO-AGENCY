@@ -1,4 +1,3 @@
-
 const About = () => {
   return (
     <section className="py-20 bg-gray-50">
@@ -6,15 +5,11 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-72 h-72 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👨‍💼</div>
-                    <div className="text-xl font-bold text-gray-800">Fundador</div>
-                    <div className="text-purple-600 font-semibold">Meltro Agency</div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                alt="Fundador da Meltro Agency"
+                className="w-80 h-80 mx-auto rounded-full object-cover shadow-2xl"
+              />
             </div>
             
             <div>
