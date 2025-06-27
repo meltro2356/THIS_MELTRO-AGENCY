@@ -1,10 +1,7 @@
-
 import { ArrowRight, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const CTA = () => {
-  return (
-    <section className="py-20 bg-gradient-hero relative overflow-hidden">
+  return <section className="py-20 bg-gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-black/30"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
       
@@ -40,10 +37,7 @@ const CTA = () => {
           </div>
 
           <div className="space-y-6">
-            <Button 
-              size="lg" 
-              className="bg-gradient-cta hover:opacity-90 text-white px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl"
-            >
+            <Button size="lg" className="bg-gradient-cta hover:opacity-90 text-white px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl">
               🚀 Quero Dominar Meu Mercado Agora
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
@@ -53,20 +47,9 @@ const CTA = () => {
             </div>
           </div>
 
-          <div className="mt-16 bg-red-500/20 border border-red-300/30 rounded-2xl p-8 backdrop-blur-sm">
-            <div className="text-2xl font-bold mb-4 text-yellow-300">
-              ⚠️ URGENTE: Promoção por Tempo Limitado
-            </div>
-            <div className="text-lg">
-              <strong>50% OFF</strong> na taxa de setup + <strong>análise competitiva gratuita</strong>
-              <br />
-              <span className="text-red-300">Válido apenas para os próximos 20 clientes</span>
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTA;
