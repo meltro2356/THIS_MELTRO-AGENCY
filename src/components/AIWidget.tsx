@@ -1,25 +1,77 @@
 
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle, X, Instagram } from 'lucide-react';
 import { useState } from 'react';
 
 const AIWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/5511999999999', '_blank');
+    setShowPopup(false);
+  };
+
+  const handleInstagram = () => {
+    window.open('https://instagram.com/meltroagency', '_blank');
+    setShowPopup(false);
+  };
 
   return (
     <>
       {/* Widget Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleButtonClick}
           className="bg-gradient-cta hover:opacity-90 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse-slow"
         >
-          {isOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <MessageCircle className="h-6 w-6" />
-          )}
+          <MessageCircle className="h-6 w-6" />
         </button>
       </div>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-sm w-full mx-4 relative">
+            <button
+              onClick={closePopup}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Entre em Contato</h3>
+              <p className="text-gray-600">Escolha sua plataforma preferida</p>
+            </div>
+            
+            <div className="space-y-4">
+              <button
+                onClick={handleWhatsApp}
+                className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp
+              </button>
+              
+              <button
+                onClick={handleInstagram}
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
+              >
+                <Instagram className="mr-2 h-5 w-5" />
+                Instagram
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Widget Panel */}
       {isOpen && (
