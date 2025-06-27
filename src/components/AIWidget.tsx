@@ -15,7 +15,7 @@ const AIWidget = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5511999999999', '_blank');
+    window.open('https://wa.me/12365000042', '_blank');
     setShowPopup(false);
   };
 
@@ -101,7 +101,7 @@ const AIWidget = () => {
             </div>
             
             <button 
-              onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+              onClick={() => window.open('https://wa.me/12365000042', '_blank')}
               className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
             >
               <MessageCircle className="mr-2 h-4 w-4" />
