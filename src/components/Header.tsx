@@ -17,6 +17,10 @@ const Header = () => {
     { path: '/casos', label: 'Estudos de Caso' }
   ];
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/12365000042', '_blank');
+  };
+
   return (
     <header className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6">
@@ -48,7 +52,10 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full">
+            <Button 
+              onClick={handleWhatsAppClick}
+              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full"
+            >
               Falar Conosco
             </Button>
           </nav>
@@ -78,7 +85,10 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full w-fit">
+              <Button 
+                onClick={handleWhatsAppClick}
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full w-fit"
+              >
                 Falar Conosco
               </Button>
             </nav>
