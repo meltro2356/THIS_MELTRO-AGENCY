@@ -23,9 +23,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <h1 className="text-2xl sm:text-3xl font-playfair font-bold text-purple-600">
-              Meltro Agency
-            </h1>
+            <img 
+              src="/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png" 
+              alt="Meltro Agency"
+              className="h-10 sm:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,16 +36,16 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-medium transition-colors hover:text-purple-600 ${
+                className={`font-medium transition-colors hover:text-orange-500 ${
                   isActive(item.path) 
-                    ? 'text-purple-600 border-b-2 border-purple-600 pb-1' 
+                    ? 'text-orange-500 border-b-2 border-orange-500 pb-1' 
                     : 'text-gray-700'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-gradient-cta hover:opacity-90 text-white px-6 py-2 rounded-full">
+            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full">
               Falar Conosco
             </Button>
           </nav>
@@ -51,7 +53,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-purple-600"
+            className="md:hidden p-2 text-gray-700 hover:text-orange-500"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -66,14 +68,14 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`font-medium transition-colors hover:text-purple-600 px-2 py-1 ${
-                    isActive(item.path) ? 'text-purple-600' : 'text-gray-700'
+                  className={`font-medium transition-colors hover:text-orange-500 px-2 py-1 ${
+                    isActive(item.path) ? 'text-orange-500' : 'text-gray-700'
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Button className="bg-gradient-cta hover:opacity-90 text-white px-6 py-2 rounded-full w-fit">
+              <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full w-fit">
                 Falar Conosco
               </Button>
             </nav>

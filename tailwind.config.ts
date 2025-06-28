@@ -24,10 +24,10 @@ export default {
 				'playfair': ['Playfair Display', 'serif'],
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-				'gradient-cta': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-				'gradient-success': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-				'gradient-premium': 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+				'gradient-hero': 'linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%)',
+				'gradient-cta': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+				'gradient-success': 'linear-gradient(135deg, #fb923c 0%, #f97316 100%)',
+				'gradient-premium': 'linear-gradient(135deg, #fed7aa 0%, #fdba74 100%)',
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -9,7 +9,7 @@ const EstudosCaso = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
+      <section className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
@@ -27,8 +27,8 @@ const EstudosCaso = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-12 border border-yellow-200">
-              <Construction className="h-20 w-20 text-yellow-600 mx-auto mb-8" />
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-12 border border-orange-200">
+              <Construction className="h-20 w-20 text-orange-600 mx-auto mb-8" />
               
               <h2 className="text-3xl font-playfair font-bold text-gray-900 mb-6">
                 Página em Construção
@@ -45,34 +45,34 @@ const EstudosCaso = () => {
                 </h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
-                    <ArrowRight className="h-5 w-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
                     Casos detalhados com antes/depois completos
                   </li>
                   <li className="flex items-start">
-                    <ArrowRight className="h-5 w-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
                     Estratégias específicas usadas em cada projeto
                   </li>
                   <li className="flex items-start">
-                    <ArrowRight className="h-5 w-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
                     Resultados mensuráveis e timeline de crescimento
                   </li>
                   <li className="flex items-start">
-                    <ArrowRight className="h-5 w-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
                     Depoimentos em vídeo dos proprietários
                   </li>
                   <li className="flex items-start">
-                    <ArrowRight className="h-5 w-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
                     Downloads de relatórios de performance
                   </li>
                 </ul>
               </div>
 
-              <div className="flex items-center justify-center text-purple-600 mb-6">
+              <div className="flex items-center justify-center text-orange-500 mb-6">
                 <Calendar className="h-5 w-5 mr-2" />
                 <span className="font-semibold">Previsão de lançamento: Janeiro 2025</span>
               </div>
 
-              <button className="bg-gradient-cta hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
+              <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
                 Ser Notificado do Lançamento
               </button>
             </div>
@@ -96,13 +96,13 @@ const EstudosCaso = () => {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">+250%</div>
+                <div className="text-4xl font-bold text-orange-500 mb-2">+250%</div>
                 <div className="text-gray-600 mb-4">Aumento em leads qualificados</div>
                 <div className="text-sm text-gray-500">Hospital 24h - RJ</div>
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl font-bold text-purple-600 mb-2">4.2x</div>
+                <div className="text-4xl font-bold text-red-500 mb-2">4.2x</div>
                 <div className="text-gray-600 mb-4">Retorno sobre investimento</div>
                 <div className="text-sm text-gray-500">Pet Shop Premium - MG</div>
               </div>

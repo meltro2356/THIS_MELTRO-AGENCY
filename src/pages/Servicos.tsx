@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 const Servicos = () => {
   const servicos = [
     {
-      icon: <Target className="h-12 w-12 text-blue-500" />,
+      icon: <Target className="h-12 w-12 text-orange-500" />,
       title: "Google Ads Hiperlocal",
       description: "Apareça primeiro quando pesquisam 'veterinário emergência' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
       features: [
@@ -17,7 +17,7 @@ const Servicos = () => {
         "Campanhas 24/7 ativas",
         "Relatórios detalhados de performance"
       ],
-      color: "from-blue-400 to-blue-600"
+      color: "from-orange-400 to-red-500"
     },
     {
       icon: <Zap className="h-12 w-12 text-yellow-500" />,
@@ -32,7 +32,7 @@ const Servicos = () => {
       color: "from-yellow-400 to-orange-500"
     },
     {
-      icon: <Crown className="h-12 w-12 text-purple-500" />,
+      icon: <Crown className="h-12 w-12 text-red-500" />,
       title: "Posicionamento Premium",
       description: "Transformamos seu serviço em desejo. Antes/depois espetaculares, depoimentos exclusivos e estratégias que atraem quem paga pelo melhor.",
       features: [
@@ -41,10 +41,10 @@ const Servicos = () => {
         "Segmentação por poder aquisitivo",
         "Aumento do ticket médio"
       ],
-      color: "from-purple-400 to-pink-500"
+      color: "from-red-400 to-orange-500"
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-green-500" />,
+      icon: <TrendingUp className="h-12 w-12 text-orange-600" />,
       title: "Especialidades em Destaque",
       description: "Ortopedia, dermatologia, cardiologia... Criamos autoridade para cada especialidade e atraímos casos complexos e bem remunerados.",
       features: [
@@ -53,7 +53,7 @@ const Servicos = () => {
         "Atração de casos complexos",
         "Posicionamento como referência"
       ],
-      color: "from-green-400 to-teal-500"
+      color: "from-orange-400 to-red-600"
     }
   ];
 
@@ -62,7 +62,7 @@ const Servicos = () => {
       <Header />
       
       {/* Header */}
-      <header className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
+      <header className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-20">
         <div className="container mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
             Nossos Serviços
@@ -111,7 +111,7 @@ const Servicos = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-playfair font-bold text-white mb-6">
             Pronto para transformar seu negócio?
@@ -119,7 +119,7 @@ const Servicos = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e descubra como podemos acelerar o crescimento do seu negócio pet care.
           </p>
-          <Button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+          <Button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
             Falar com Especialista
           </Button>
         </div>

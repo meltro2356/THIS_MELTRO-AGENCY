@@ -6,22 +6,22 @@ import Footer from '@/components/Footer';
 const Sobre = () => {
   const valores = [
     {
-      icon: <Target className="h-8 w-8 text-purple-600" />,
+      icon: <Target className="h-8 w-8 text-orange-600" />,
       title: "Foco em Resultados",
       description: "Cada estratégia é pensada para gerar ROI mensurável e crescimento real para seu negócio pet care."
     },
     {
-      icon: <Users className="h-8 w-8 text-blue-600" />,
+      icon: <Users className="h-8 w-8 text-red-600" />,
       title: "Especialização Pet Care",
       description: "Conhecemos profundamente o mercado pet e suas particularidades. Não somos uma agência genérica."
     },
     {
-      icon: <Award className="h-8 w-8 text-green-600" />,
+      icon: <Award className="h-8 w-8 text-yellow-600" />,
       title: "Transparência Total",
       description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-orange-600" />,
+      icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
       title: "Crescimento Sustentável",
       description: "Construímos estratégias de longo prazo que escalam junto com seu negócio."
     }
@@ -32,7 +32,7 @@ const Sobre = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
+      <section className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
@@ -62,7 +62,7 @@ const Sobre = () => {
               <div>
                 <h2 className="text-4xl font-playfair font-bold text-gray-900 mb-6">
                   Por Que Criei a 
-                  <span className="text-purple-600"> Meltro</span>
+                  <span className="text-orange-500"> Meltro</span>
                 </h2>
                 
                 <div className="text-lg text-gray-700 leading-relaxed space-y-6">
@@ -74,7 +74,7 @@ const Sobre = () => {
                     "Vi clínicas veterinárias brilhantes lutando para encher a agenda, hospitais 24h invisíveis justamente no momento que mais precisavam aparecer, e serviços premium sendo confundidos com o básico."
                   </p>
                   
-                  <p className="font-semibold text-purple-600 text-xl">
+                  <p className="font-semibold text-orange-500 text-xl">
                     "A Meltro nasce disso: performance de verdade, para negócios que realmente cuidam de vidas."
                   </p>
                 </div>
@@ -94,14 +94,14 @@ const Sobre = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">🎯 Missão</h3>
               <p className="text-gray-700 leading-relaxed">
                 Transformar cada negócio pet care em uma referência local, gerando impacto real na vida dos pets e retorno garantido para os proprietários através de estratégias de marketing digital comprovadas.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">🚀 Visão</h3>
               <p className="text-gray-700 leading-relaxed">
                 Ser a principal referência em marketing digital para o setor pet care no Brasil, conhecidos pela especialização, resultados consistentes e pelo crescimento sustentável dos nossos clientes.
@@ -143,7 +143,7 @@ const Sobre = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-playfair font-bold text-white mb-6">
             Vamos Crescer Juntos?
@@ -151,7 +151,7 @@ const Sobre = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Se você tem um negócio pet care e quer transformar sua agenda vazia em lucro constante, vamos conversar.
           </p>
-          <button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
+          <button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
             Falar com Nossa Equipe
           </button>
         </div>
