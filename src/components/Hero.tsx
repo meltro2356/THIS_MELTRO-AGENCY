@@ -1,5 +1,5 @@
 
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -23,22 +23,13 @@ const Hero = () => {
             <strong>Aumente o faturamento do seu negócio pet ainda esse mês.</strong>
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
+          <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
             <Button 
               size="lg" 
-              className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl"
+              className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-pulse"
             >
               Quero Mais Clientes Agora
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="w-full sm:w-auto bg-white/20 border-white/30 text-white hover:bg-white/30 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full backdrop-blur-sm"
-            >
-              <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              Ver Cases de Sucesso
             </Button>
           </div>
           
