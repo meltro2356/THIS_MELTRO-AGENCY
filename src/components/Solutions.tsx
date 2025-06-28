@@ -1,4 +1,3 @@
-
 import { Target, Zap, Crown, TrendingUp } from 'lucide-react';
 
 const Solutions = () => {
@@ -20,7 +19,7 @@ const Solutions = () => {
     {
       icon: <Crown className="h-10 w-10 sm:h-12 sm:w-12 text-purple-500" />,
       title: "Funil de vendas personalizado",
-      description: "Transformamos seu serviço em desejo. Antes/depois espetaculares, depoimentos exclusivos e estratégias que atraem quem paga pelo melhor.",
+      description: "fazemos a estratégia perfeita para cada caso, transformamos lead curioso em cliente guiando através de um funil personalizado",
       results: "+180% no ticket médio",
       color: "from-purple-400 to-pink-500"
     },
