@@ -1,3 +1,4 @@
+
 import { Target, Zap, TrendingUp, ShoppingCart, FileText, Users, MessageCircle } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
@@ -9,7 +10,10 @@ const ServicesSection = () => {
       description: "Campanhas otimizadas no Google Ads e redes sociais para atrair clientes qualificados.",
       shortDescription: "Campanhas otimizadas para atrair clientes qualificados e aumentar suas vendas.",
       features: [
-        "Google Ads e Facebook Ads"
+        "Google Ads e Facebook Ads",
+        "Segmentação avançada",
+        "Otimização contínua de campanhas",
+        "Relatórios detalhados de ROI"
       ],
       detailedInfo: "Criamos e gerenciamos campanhas de tráfego pago altamente segmentadas para o seu negócio pet care. Utilizamos as principais plataformas como Google Ads, Facebook Ads e Instagram Ads para atrair clientes que realmente estão procurando pelos seus serviços.",
       color: "from-orange-400 to-red-500"
