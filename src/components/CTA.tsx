@@ -1,3 +1,4 @@
+
 import { ArrowRight, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const CTA = () => {
@@ -8,8 +9,8 @@ const CTA = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
-            Pare de Perder Clientes
-            <span className="block text-yellow-300">Para a Concorrência</span>
+            Na Meltro Agency, a gente não late — a gente 
+            <span className="text-yellow-300"> morde resultado</span>
           </h2>
           
           <p className="text-xl mb-8 leading-relaxed">
