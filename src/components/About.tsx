@@ -1,3 +1,4 @@
+
 const About = () => {
   return <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -15,15 +16,19 @@ const About = () => {
               
               <div className="text-lg text-gray-700 leading-relaxed space-y-4 mb-8">
                 <p>
-                  "Depois de atender grandes players de fora, percebi o quanto o setor pet care no Brasil estava carente de marketing sério e com resultado."
+                  "Somos uma agência feita sob medida para o setor pet. Nosso foco é simples: atrair mais clientes qualificados, aumentar o faturamento e defender o território dos negócios pet com serviços que vão do tráfego pago ao funil de vendas, passando por copy de ataque, sites com presença de matilha e automações que trabalham 24/7."
                 </p>
                 
                 <p>
-                  "Vi clínicas veterinárias brilhantes lutando para encher a agenda, hospitais 24h invisíveis no momento que mais precisavam aparecer, e serviços premium sendo confundidos com o básico."
+                  "A gente entende que no mundo pet, o cuidado vem em primeiro lugar — e é exatamente assim que tratamos o marketing dos nossos clientes. Com respeito, visão, estratégia e um toque de ousadia."
+                </p>
+
+                <p>
+                  "Nosso compromisso é com quem ama o que faz, já tem história e quer crescer ainda mais, sem virar refém de franquias ou depender só de indicação."
                 </p>
                 
                 <p className="font-semibold text-purple-600">
-                  "A Meltro nasce disso: performance de verdade, para negócios que realmente cuidam de vidas."
+                  "Se o seu negócio já é incrível, nosso trabalho é fazer todo mundo saber disso."
                 </p>
               </div>
               
