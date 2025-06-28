@@ -14,7 +14,7 @@ const ServicesSection = () => {
       ],
       detailedInfo: "Criamos e gerenciamos campanhas de tráfego pago altamente segmentadas para o seu negócio pet care. Utilizamos as principais plataformas como Google Ads, Facebook Ads e Instagram Ads para atrair clientes que realmente estão procurando pelos seus serviços.",
       color: "from-orange-400 to-red-500",
-      additionalFeatures: []
+      additionalFeatures: ["Segmentação avançada", "Otimização contínua de campanhas", "Estratégia personalizada"]
     },
     {
       icon: <FileText className="h-12 w-12 text-yellow-500" />,
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       ],
       detailedInfo: "Desenvolvemos landing pages específicas para cada campanha, com design focado em conversão e otimizado para dispositivos móveis. Cada página é testada e refinada continuamente para maximizar a taxa de conversão.",
       color: "from-yellow-400 to-orange-500",
-      additionalFeatures: ["Segmentação avançada"]
+      additionalFeatures: []
     },
     {
       icon: <ShoppingCart className="h-12 w-12 text-red-500" />,
@@ -44,7 +44,7 @@ const ServicesSection = () => {
       ],
       detailedInfo: "Criamos lojas online completas para produtos pet, com sistema de pagamento integrado, gestão de estoque, carrinho de compras otimizado e todas as funcionalidades necessárias para um e-commerce de sucesso.",
       color: "from-red-400 to-orange-500",
-      additionalFeatures: ["Otimização contínua de campanhas"]
+      additionalFeatures: []
     },
     {
       icon: <MessageCircle className="h-12 w-12 text-orange-600" />,
@@ -59,7 +59,7 @@ const ServicesSection = () => {
       ],
       detailedInfo: "Desenvolvemos scripts de atendimento personalizados para sua equipe, incluindo treinamentos práticos e acompanhamento de performance. Criamos fluxos de conversação que guiam o cliente da primeira interação até o fechamento da venda.",
       color: "from-orange-400 to-red-600",
-      additionalFeatures: ["Estratégia personalizada"]
+      additionalFeatures: []
     },
     {
       icon: <TrendingUp className="h-12 w-12 text-yellow-600" />,
