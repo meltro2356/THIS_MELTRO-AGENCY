@@ -11,6 +11,7 @@ interface ServiceCardProps {
   detailedInfo: string;
   color: string;
   buttonColor: string;
+  additionalFeatures?: string[];
 }
 
 const ServiceCard = ({ 
@@ -20,8 +21,11 @@ const ServiceCard = ({
   features, 
   detailedInfo, 
   color, 
-  buttonColor 
+  buttonColor,
+  additionalFeatures = []
 }: ServiceCardProps) => {
+  const allFeatures = [...features, ...additionalFeatures];
+  
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
       <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center mb-6`}>
@@ -68,28 +72,12 @@ const ServiceCard = ({
           <div className="mt-6">
             <h4 className="font-bold text-gray-900 mb-4 text-lg">O que está incluso:</h4>
             <div className="space-y-3">
-              {features.map((feature, featureIndex) => (
+              {allFeatures.map((feature, featureIndex) => (
                 <div key={featureIndex} className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
-              <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">{features[0] || 'Recurso adicional'}</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">{features[0] || 'Recurso adicional'}</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">{features[0] || 'Recurso adicional'}</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">{features[0] || 'Recurso adicional'}</span>
-              </div>
             </div>
           </div>
 

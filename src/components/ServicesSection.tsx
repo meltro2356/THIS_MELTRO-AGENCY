@@ -13,7 +13,8 @@ const ServicesSection = () => {
         "Google Ads e Meta Ads"
       ],
       detailedInfo: "Criamos e gerenciamos campanhas de tráfego pago altamente segmentadas para o seu negócio pet care. Utilizamos as principais plataformas como Google Ads, Facebook Ads e Instagram Ads para atrair clientes que realmente estão procurando pelos seus serviços.",
-      color: "from-orange-400 to-red-500"
+      color: "from-orange-400 to-red-500",
+      additionalFeatures: []
     },
     {
       icon: <FileText className="h-12 w-12 text-yellow-500" />,
@@ -27,7 +28,8 @@ const ServicesSection = () => {
         "Integração com ferramentas de análise"
       ],
       detailedInfo: "Desenvolvemos landing pages específicas para cada campanha, com design focado em conversão e otimizado para dispositivos móveis. Cada página é testada e refinada continuamente para maximizar a taxa de conversão.",
-      color: "from-yellow-400 to-orange-500"
+      color: "from-yellow-400 to-orange-500",
+      additionalFeatures: ["Segmentação avançada"]
     },
     {
       icon: <ShoppingCart className="h-12 w-12 text-red-500" />,
@@ -41,7 +43,8 @@ const ServicesSection = () => {
         "Otimização para conversão"
       ],
       detailedInfo: "Criamos lojas online completas para produtos pet, com sistema de pagamento integrado, gestão de estoque, carrinho de compras otimizado e todas as funcionalidades necessárias para um e-commerce de sucesso.",
-      color: "from-red-400 to-orange-500"
+      color: "from-red-400 to-orange-500",
+      additionalFeatures: ["Otimização contínua de campanhas"]
     },
     {
       icon: <MessageCircle className="h-12 w-12 text-orange-600" />,
@@ -55,7 +58,8 @@ const ServicesSection = () => {
         "Acompanhamento de performance"
       ],
       detailedInfo: "Desenvolvemos scripts de atendimento personalizados para sua equipe, incluindo treinamentos práticos e acompanhamento de performance. Criamos fluxos de conversação que guiam o cliente da primeira interação até o fechamento da venda.",
-      color: "from-orange-400 to-red-600"
+      color: "from-orange-400 to-red-600",
+      additionalFeatures: ["Estratégia personalizada"]
     },
     {
       icon: <TrendingUp className="h-12 w-12 text-yellow-600" />,
@@ -69,7 +73,8 @@ const ServicesSection = () => {
         "Otimização contínua do funil"
       ],
       detailedInfo: "Criamos funis de vendas personalizados que acompanham toda a jornada do cliente, desde o primeiro contato até a fidelização. Utilizamos automação inteligente para nutrir leads e aumentar significativamente suas taxas de conversão.",
-      color: "from-yellow-400 to-red-500"
+      color: "from-yellow-400 to-red-500",
+      additionalFeatures: []
     },
     {
       icon: <Users className="h-12 w-12 text-red-600" />,
@@ -83,7 +88,8 @@ const ServicesSection = () => {
         "Integração com outras ferramentas"
       ],
       detailedInfo: "Implementamos sistemas CRM completos que organizam todos os seus contatos, automatizam follow-ups, geram relatórios detalhados de vendas e se integram perfeitamente com todas as suas outras ferramentas de marketing e vendas.",
-      color: "from-red-400 to-yellow-500"
+      color: "from-red-400 to-yellow-500",
+      additionalFeatures: []
     },
     {
       icon: <Zap className="h-12 w-12 text-orange-500" />,
@@ -97,7 +103,8 @@ const ServicesSection = () => {
         "Segmentação comportamental"
       ],
       detailedInfo: "Desenvolvemos estratégias avançadas de remarketing para recuperar vendas perdidas e reconverter leads que não finalizaram a compra. Utilizamos e-mail marketing, retargeting e segmentação comportamental para maximizar suas oportunidades de venda.",
-      color: "from-orange-400 to-yellow-600"
+      color: "from-orange-400 to-yellow-600",
+      additionalFeatures: []
     }
   ];
 
@@ -115,6 +122,7 @@ const ServicesSection = () => {
               detailedInfo={servico.detailedInfo}
               color={servico.color}
               buttonColor="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
+              additionalFeatures={servico.additionalFeatures}
             />
           ))}
         </div>
