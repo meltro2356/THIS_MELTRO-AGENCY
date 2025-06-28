@@ -5,7 +5,7 @@ const Solutions = () => {
     {
       icon: <Target className="h-10 w-10 sm:h-12 sm:w-12 text-blue-500" />,
       title: "Google Ads Hiperlocal",
-      description: "Apareça primeiro quando pesquisam 'veterinário emergência' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
+      description: "Apareça primeiro quando pesquisam 'emergência veterinária' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
       results: "+250% em consultas de emergência",
       color: "from-blue-400 to-blue-600"
     },
