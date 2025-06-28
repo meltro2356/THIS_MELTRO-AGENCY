@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, X, TrendingUp, Users, Target } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, TrendingUp, Users, Target, ArrowRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 
@@ -86,6 +85,10 @@ const CasesSection = () => {
     setCurrentCase((prev) => (prev - 1 + cases.length) % cases.length);
   };
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/12365000042', '_blank');
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="container mx-auto px-6">
@@ -153,57 +156,6 @@ const CasesSection = () => {
                           <div className="text-sm text-purple-700">ROI</div>
                         </div>
                       </div>
-
-                      {/* Botão Ver Detalhes */}
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button className="w-full bg-gradient-cta hover:opacity-90 text-white py-3 text-lg font-semibold rounded-xl">
-                            Ver Case Completo
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-                          <DialogHeader>
-                            <DialogTitle className="text-2xl font-playfair font-bold">
-                              {caseItem.title}
-                            </DialogTitle>
-                          </DialogHeader>
-                          
-                          <div className="space-y-6">
-                            <img 
-                              src={caseItem.image} 
-                              alt={caseItem.title}
-                              className="w-full h-60 object-cover rounded-xl"
-                            />
-                            
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                              <div className="bg-red-50 p-4 rounded-xl">
-                                <h4 className="font-bold text-red-800 mb-2">🎯 Desafio</h4>
-                                <p className="text-red-700 text-sm">{caseItem.challenge}</p>
-                              </div>
-                              <div className="bg-blue-50 p-4 rounded-xl">
-                                <h4 className="font-bold text-blue-800 mb-2">💡 Solução</h4>
-                                <p className="text-blue-700 text-sm">{caseItem.solution}</p>
-                              </div>
-                              <div className="bg-green-50 p-4 rounded-xl">
-                                <h4 className="font-bold text-green-800 mb-2">⏱️ Prazo</h4>
-                                <p className="text-green-700 text-sm">{caseItem.timeframe}</p>
-                              </div>
-                            </div>
-                            
-                            <div>
-                              <h4 className="font-bold text-gray-900 mb-3">📈 Resultados Detalhados</h4>
-                              <p className="text-gray-700 leading-relaxed">{caseItem.fullDescription}</p>
-                            </div>
-                            
-                            <div className="bg-gradient-premium p-6 rounded-xl">
-                              <h4 className="font-bold text-gray-900 mb-3">💬 Depoimento do Cliente</h4>
-                              <p className="text-gray-700 italic leading-relaxed">
-                                "{caseItem.testimonial}"
-                              </p>
-                            </div>
-                          </div>
-                        </DialogContent>
-                      </Dialog>
                     </div>
                   </div>
                 </div>
@@ -240,6 +192,17 @@ const CasesSection = () => {
               />
             ))}
           </div>
+        </div>
+
+        {/* CTA Centralizado */}
+        <div className="text-center mt-16">
+          <Button 
+            onClick={handleWhatsAppClick}
+            className="bg-gradient-cta hover:opacity-90 text-white px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-pulse"
+          >
+            🚀 Quero Mais Clientes Agora
+            <ArrowRight className="ml-3 h-6 w-6" />
+          </Button>
         </div>
       </div>
     </section>
