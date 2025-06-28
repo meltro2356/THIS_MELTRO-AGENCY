@@ -57,9 +57,7 @@ const Sobre = () => {
                   
                   <p>Notei clínicas veterinárias brilhantes lutando para encher a agenda, hospitais 24h invisíveis justamente no momento que mais precisavam aparecer, e serviços premium sendo confundidos com o básico.</p>
                   
-                  <p className="font-semibold text-orange-500 text-xl">
-                    "A Meltro nasce disso: performance de verdade, para negócios que realmente cuidam de vidas."
-                  </p>
+                  <p className="font-semibold text-orange-500 text-xl">A Meltro nasce disso: performance de verdade, para negócios que realmente cuidam de vidas.</p>
                 </div>
               </div>
             </div>
