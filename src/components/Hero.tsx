@@ -26,7 +26,11 @@ const Hero = () => {
           <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
             <Button 
               size="lg" 
-              className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-pulse"
+              className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-[shimmer_2s_ease-in-out_infinite] bg-[length:200%_100%] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500"
+              style={{
+                backgroundImage: 'linear-gradient(90deg, #f97316 25%, #fbbf24 50%, #f97316 75%)',
+                animation: 'shimmer 2s ease-in-out infinite'
+              }}
             >
               Quero Mais Clientes Agora
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
