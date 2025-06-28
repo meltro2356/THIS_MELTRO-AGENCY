@@ -20,7 +20,7 @@ const AIWidget = () => {
   };
 
   const handleInstagram = () => {
-    window.open('https://instagram.com/meltroagency', '_blank');
+    window.open('https://www.instagram.com/meltro_agency7857/', '_blank');
     setShowPopup(false);
   };
 
