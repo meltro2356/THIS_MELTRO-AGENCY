@@ -13,7 +13,7 @@ const Sobre = () => {
     description: "Conhecemos profundamente o mercado pet e suas particularidades. Não somos uma agência genérica."
   }, {
     icon: <Award className="h-8 w-8 text-yellow-600" />,
-    title: "Garantia de satisfação",
+    title: "Transparência total",
     description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
   }, {
     icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
