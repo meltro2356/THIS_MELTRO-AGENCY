@@ -22,12 +22,15 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png" 
               alt="Meltro Agency"
               className="h-10 sm:h-12 w-auto"
             />
+            <span className="text-xl sm:text-2xl font-bold text-gray-800">
+              Meltro agency
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
