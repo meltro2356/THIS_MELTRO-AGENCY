@@ -1,23 +1,22 @@
-
 import { AlertTriangle, Clock, TrendingDown } from 'lucide-react';
 
 const Problems = () => {
   const problems = [
     {
       icon: <Clock className="h-10 w-10 sm:h-12 sm:w-12 text-red-500" />,
-      title: "Agenda Vazia = Prejuízo Direto",
+      title: "Alta dependência de indicação e boca a boca",
       description: "Cada horário vago na sua clínica ou creche é dinheiro perdido. Enquanto você espera o telefone tocar, a concorrência está dominando o Google.",
       audience: "Clínicas e Creches"
     },
     {
       icon: <AlertTriangle className="h-10 w-10 sm:h-12 sm:w-12 text-orange-500" />,
-      title: "Emergências Invisíveis no Google",
+      title: "Concorrência acirrada com franquias e redes grandes",
       description: "Às 2h da manhã, um pet precisa de socorro. Se sua clínica não aparece primeiro no Google, o cliente vai para o concorrente.",
       audience: "Hospitais 24h"
     },
     {
       icon: <TrendingDown className="h-10 w-10 sm:h-12 sm:w-12 text-purple-500" />,
-      title: "Competição por Preço Baixo",
+      title: "Margens apertadas e medo de investir errado",
       description: "Seus serviços premium são confundidos com os básicos. Clientes qualificados não te encontram e você fica brigando por migalhas.",
       audience: "Serviços Premium"
     }
