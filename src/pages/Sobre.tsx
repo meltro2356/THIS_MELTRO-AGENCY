@@ -1,34 +1,25 @@
-
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
 const Sobre = () => {
-  const valores = [
-    {
-      icon: <Target className="h-8 w-8 text-orange-600" />,
-      title: "Foco em Resultados",
-      description: "Cada estratégia é pensada para gerar ROI mensurável e crescimento real para seu negócio pet care."
-    },
-    {
-      icon: <Users className="h-8 w-8 text-red-600" />,
-      title: "Especialização Pet Care",
-      description: "Conhecemos profundamente o mercado pet e suas particularidades. Não somos uma agência genérica."
-    },
-    {
-      icon: <Award className="h-8 w-8 text-yellow-600" />,
-      title: "Transparência Total",
-      description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
-    },
-    {
-      icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
-      title: "Crescimento Sustentável",
-      description: "Construímos estratégias de longo prazo que escalam junto com seu negócio."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+  const valores = [{
+    icon: <Target className="h-8 w-8 text-orange-600" />,
+    title: "Foco em Resultados",
+    description: "Cada estratégia é pensada para gerar ROI mensurável e crescimento real para seu negócio pet care."
+  }, {
+    icon: <Users className="h-8 w-8 text-red-600" />,
+    title: "Especialização Pet Care",
+    description: "Conhecemos profundamente o mercado pet e suas particularidades. Não somos uma agência genérica."
+  }, {
+    icon: <Award className="h-8 w-8 text-yellow-600" />,
+    title: "Transparência Total",
+    description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
+  }, {
+    icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
+    title: "Crescimento Sustentável",
+    description: "Construímos estratégias de longo prazo que escalam junto com seu negócio."
+  }];
+  return <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -52,11 +43,7 @@ const Sobre = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img
-                  src="/lovable-uploads/f10f6e7e-a2a2-4fb8-80bd-3d621a32c210.png"
-                  alt="Fundador da Meltro Agency"
-                  className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-2xl"
-                />
+                <img alt="Fundador da Meltro Agency" className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-2xl" src="/lovable-uploads/fdbcb44d-372d-4a67-9b81-78fbce8d99d7.png" />
               </div>
               
               <div>
@@ -124,11 +111,7 @@ const Sobre = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {valores.map((valor, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
+            {valores.map((valor, index) => <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div className="mb-4">{valor.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {valor.title}
@@ -136,8 +119,7 @@ const Sobre = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {valor.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -158,8 +140,6 @@ const Sobre = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Sobre;
