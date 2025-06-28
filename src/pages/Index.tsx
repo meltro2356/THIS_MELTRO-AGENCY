@@ -1,4 +1,5 @@
 
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Problems from '@/components/Problems';
 import Solutions from '@/components/Solutions';
@@ -13,6 +14,7 @@ import AIWidget from '@/components/AIWidget';
 const Index = () => {
   return (
     <div className="min-h-screen bg-white font-inter">
+      <Header />
       <Hero />
       <Problems />
       <Solutions />

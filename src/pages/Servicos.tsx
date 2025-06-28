@@ -2,6 +2,8 @@
 import { ArrowLeft, Target, Zap, Crown, TrendingUp, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Servicos = () => {
   const servicos = [
@@ -57,14 +59,11 @@ const Servicos = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Header />
+      
       {/* Header */}
       <header className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
         <div className="container mx-auto px-6">
-          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
-            <ArrowLeft className="h-5 w-5 mr-2" />
-            Voltar ao início
-          </Link>
-          
           <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
             Nossos Serviços
           </h1>
@@ -125,6 +124,8 @@ const Servicos = () => {
           </Button>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
