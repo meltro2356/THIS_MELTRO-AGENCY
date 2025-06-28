@@ -55,9 +55,7 @@ const Sobre = () => {
                 <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                   <p>Depois de três anos atendendo grandes players de diversos setores, percebi o quanto o mercado pet care no Brasil estava carente de marketing digital especializado e com resultados reais.</p>
                   
-                  <p>
-                    "Vi clínicas veterinárias brilhantes lutando para encher a agenda, hospitais 24h invisíveis justamente no momento que mais precisavam aparecer, e serviços premium sendo confundidos com o básico."
-                  </p>
+                  <p>Notei clínicas veterinárias brilhantes lutando para encher a agenda, hospitais 24h invisíveis justamente no momento que mais precisavam aparecer, e serviços premium sendo confundidos com o básico.</p>
                   
                   <p className="font-semibold text-orange-500 text-xl">
                     "A Meltro nasce disso: performance de verdade, para negócios que realmente cuidam de vidas."
