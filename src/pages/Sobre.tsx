@@ -1,6 +1,7 @@
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
 const Sobre = () => {
   const valores = [{
     icon: <Target className="h-8 w-8 text-orange-600" />,
@@ -12,7 +13,7 @@ const Sobre = () => {
     description: "Conhecemos profundamente o mercado pet e suas particularidades. Não somos uma agência genérica."
   }, {
     icon: <Award className="h-8 w-8 text-yellow-600" />,
-    title: "Transparência Total",
+    title: "Garantia de satisfação",
     description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
   }, {
     icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
@@ -136,4 +137,5 @@ const Sobre = () => {
       <Footer />
     </div>;
 };
+
 export default Sobre;
