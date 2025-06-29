@@ -5,19 +5,19 @@ const Problems = () => {
     {
       icon: <Clock className="h-10 w-10 sm:h-12 sm:w-12 text-red-500" />,
       title: "Alta dependência de indicação e boca a boca",
-      description: "Cada horário vago na sua clínica ou creche é dinheiro perdido. Enquanto você espera o telefone tocar, a concorrência está dominando o Google.",
+      description: "Clientes fiéis são ótimos, mas contar só com o boca a boca é arriscado. E se amanhã um concorrente abrir do outro lado da rua com marketing agressivo? Quem não é visto, não é lembrado.",
       audience: "Clínicas e Creches"
     },
     {
       icon: <AlertTriangle className="h-10 w-10 sm:h-12 sm:w-12 text-orange-500" />,
       title: "Concorrência acirrada com franquias e redes grandes",
-      description: "Às 2h da manhã, um pet precisa de socorro. Se sua clínica não aparece primeiro no Google, o cliente vai para o concorrente.",
+      description: "Petz, Cobasi e cia. estão chegando com estrutura, preço e presença digital pesada. Se seu negócio continuar invisível online, vai perder espaço — mesmo sendo melhor.",
       audience: "Hospitais 24h"
     },
     {
       icon: <TrendingDown className="h-10 w-10 sm:h-12 sm:w-12 text-purple-500" />,
       title: "Margens apertadas e medo de investir errado",
-      description: "Seus serviços premium são confundidos com os básicos. Clientes qualificados não te encontram e você fica brigando por migalhas.",
+      description: "Já gastou com agência que prometeu o mundo e não entregou nem 10 curtidas? A gente entende. Por isso, trabalhamos com estratégias testadas, focadas em atrair clientes reais",
       audience: "Serviços Premium"
     }
   ];
