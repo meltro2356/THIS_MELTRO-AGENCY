@@ -84,9 +84,7 @@ const Sobre = () => {
 
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">🚀 Visão</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Ser a principal referência em marketing digital para o setor pet care no Brasil, conhecidos pela especialização, resultados consistentes e pelo crescimento sustentável dos nossos clientes.
-              </p>
+              <p className="text-gray-700 leading-relaxed">Ser a principal referência em marketing digital para o setor pet no Brasil, conhecidos pela especialização, resultados consistentes e pelo crescimento sustentável dos nossos clientes.</p>
             </div>
           </div>
         </div>
