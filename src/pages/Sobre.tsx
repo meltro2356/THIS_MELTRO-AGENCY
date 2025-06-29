@@ -17,7 +17,7 @@ const Sobre = () => {
     description: "Relatórios detalhados, métricas claras e comunicação constante. Você sempre saberá onde está seu investimento."
   }, {
     icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
-    title: "Crescimento Sustentável",
+    title: "Branding e posicionamento",
     description: "Construímos estratégias de longo prazo que escalam junto com seu negócio."
   }];
   return <div className="min-h-screen bg-white">
