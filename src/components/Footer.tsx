@@ -1,11 +1,8 @@
-
 import { Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-12 sm:py-16">
+  return <footer className="bg-gray-900 text-white py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div>
@@ -17,12 +14,7 @@ const Footer = () => {
               Transformamos agendas vazias em fluxo constante de clientes qualificados.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.instagram.com/meltro_agency7857/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-purple-600 hover:bg-purple-700 p-2.5 sm:p-3 rounded-full transition-colors"
-              >
+              <a href="https://www.instagram.com/meltro_agency7857/" target="_blank" rel="noopener noreferrer" className="bg-purple-600 hover:bg-purple-700 p-2.5 sm:p-3 rounded-full transition-colors">
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
             </div>
@@ -30,9 +22,7 @@ const Footer = () => {
           
           <div className="flex flex-col items-center justify-center">
             <Link to="/servicos">
-              <Button className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Nossos Serviços
-              </Button>
+              
             </Link>
           </div>
         </div>
@@ -44,8 +34,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
