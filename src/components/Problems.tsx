@@ -1,3 +1,4 @@
+
 import { AlertTriangle, Clock, TrendingDown } from 'lucide-react';
 
 const Problems = () => {
@@ -10,7 +11,7 @@ const Problems = () => {
     },
     {
       icon: <AlertTriangle className="h-10 w-10 sm:h-12 sm:w-12 text-orange-500" />,
-      title: "Concorrência acirrada com franquias e redes grandes",
+      title: "As grandes franquias estão roubando sua fatia do bolo",
       description: "Petz, Cobasi e cia. estão chegando com estrutura, preço e presença digital pesada. Se seu negócio continuar invisível online, vai perder espaço — mesmo sendo melhor.",
       audience: "Hospitais 24h"
     },
