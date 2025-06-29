@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CaseItem } from '@/types/case';
@@ -81,14 +80,14 @@ const CasesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-6">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-4 sm:mb-6">
             Cases de 
             <span className="bg-gradient-success bg-clip-text text-transparent"> Sucesso</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Resultados reais de negócios pet care que transformaram suas operações e multiplicaram o faturamento.
           </p>
         </div>
@@ -96,13 +95,13 @@ const CasesSection = () => {
         <CaseCarousel cases={cases} />
 
         {/* CTA Centralizado */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-12 sm:mt-16">
           <Button 
             onClick={handleWhatsAppClick}
-            className="bg-gradient-cta hover:opacity-90 text-white px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-pulse"
+            className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-pulse"
           >
             🚀 Quero Mais Clientes Agora
-            <ArrowRight className="ml-3 h-6 w-6" />
+            <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6" />
           </Button>
         </div>
       </div>
