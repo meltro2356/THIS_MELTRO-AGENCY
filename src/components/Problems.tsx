@@ -104,9 +104,7 @@ const Problems = () => {
 
           {/* Auto-play indicator */}
           <div className="flex justify-center mt-4">
-            <button onClick={() => setIsAutoPlaying(!isAutoPlaying)} className={`text-sm px-4 py-2 rounded-full transition-all duration-200 ${isAutoPlaying ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}>
-              {isAutoPlaying ? '⏸️ Pausar' : '▶️ Auto-play'}
-            </button>
+            
           </div>
         </div>
       </div>
