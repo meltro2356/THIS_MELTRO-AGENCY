@@ -1,7 +1,6 @@
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
 const Sobre = () => {
   const valores = [{
     icon: <Target className="h-8 w-8 text-orange-600" />,
@@ -97,9 +96,7 @@ const Sobre = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-playfair font-bold text-gray-900 mb-6">
-              Nossos Valores
-            </h2>
+            <h2 className="text-4xl font-playfair font-bold mb-6 text-gray-950">Por que escolher a Meltro agency ?</h2>
             <p className="text-xl text-gray-600">
               Os princípios que guiam cada estratégia e cada resultado que entregamos.
             </p>
@@ -137,5 +134,4 @@ const Sobre = () => {
       <Footer />
     </div>;
 };
-
 export default Sobre;
