@@ -1,8 +1,11 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/12365000042', '_blank');
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
@@ -25,6 +28,7 @@ const Hero = () => {
           
           <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
             <Button 
+              onClick={handleWhatsAppClick}
               size="lg" 
               className="w-full sm:w-auto bg-gradient-cta hover:opacity-90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl animate-[shimmer_2s_ease-in-out_infinite] bg-[length:200%_100%] bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500"
               style={{
