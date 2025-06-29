@@ -1,8 +1,11 @@
+
 import { useState, useEffect } from 'react';
-import { AlertTriangle, Clock, TrendingDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { AlertTriangle, Clock, TrendingDown } from 'lucide-react';
+
 const Problems = () => {
   const [currentProblem, setCurrentProblem] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
   const problems = [{
     icon: <Clock className="h-16 w-16 sm:h-20 sm:w-20 text-red-500" />,
     title: "Alta dependência de indicação e boca a boca",
@@ -25,6 +28,7 @@ const Problems = () => {
     color: "from-purple-500 to-purple-600",
     bgColor: "bg-purple-50"
   }];
+
   useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(() => {
@@ -32,19 +36,14 @@ const Problems = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, [isAutoPlaying, problems.length]);
-  const nextProblem = () => {
-    setCurrentProblem(prev => (prev + 1) % problems.length);
-    setIsAutoPlaying(false);
-  };
-  const prevProblem = () => {
-    setCurrentProblem(prev => (prev - 1 + problems.length) % problems.length);
-    setIsAutoPlaying(false);
-  };
+
   const goToProblem = (index: number) => {
     setCurrentProblem(index);
     setIsAutoPlaying(false);
   };
-  return <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+
+  return (
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-red-200/20 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
@@ -60,7 +59,17 @@ const Problems = () => {
         <div className="relative max-w-4xl mx-auto">
           {/* Main carousel container */}
           <div className="relative h-[500px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl">
-            {problems.map((problem, index) => <div key={index} className={`absolute inset-0 transition-all duration-700 ease-in-out transform ${index === currentProblem ? 'translate-x-0 opacity-100 scale-100' : index < currentProblem ? '-translate-x-full opacity-0 scale-95' : 'translate-x-full opacity-0 scale-95'}`}>
+            {problems.map((problem, index) => (
+              <div 
+                key={index} 
+                className={`absolute inset-0 transition-all duration-700 ease-in-out transform ${
+                  index === currentProblem 
+                    ? 'translate-x-0 opacity-100 scale-100' 
+                    : index < currentProblem 
+                      ? '-translate-x-full opacity-0 scale-95' 
+                      : 'translate-x-full opacity-0 scale-95'
+                }`}
+              >
                 <div className={`h-full ${problem.bgColor} relative`}>
                   {/* Background gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${problem.color} opacity-10`}></div>
@@ -70,9 +79,6 @@ const Problems = () => {
                     <div className="mb-6 animate-bounce">
                       {problem.icon}
                     </div>
-                    
-                    {/* Badge */}
-                    
                     
                     {/* Title */}
                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 font-playfair leading-tight">
@@ -85,29 +91,28 @@ const Problems = () => {
                     </p>
                   </div>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
-
-          {/* Navigation arrows */}
-          <button onClick={prevProblem} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-20">
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          
-          <button onClick={nextProblem} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-20">
-            <ChevronRight className="h-6 w-6" />
-          </button>
 
           {/* Progress indicators */}
           <div className="flex justify-center mt-8 space-x-3">
-            {problems.map((_, index) => <button key={index} onClick={() => goToProblem(index)} className={`transition-all duration-300 ${index === currentProblem ? 'w-12 h-3 bg-gradient-to-r from-red-500 to-purple-500 rounded-full' : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full'}`} />)}
-          </div>
-
-          {/* Auto-play indicator */}
-          <div className="flex justify-center mt-4">
-            
+            {problems.map((_, index) => (
+              <button 
+                key={index} 
+                onClick={() => goToProblem(index)} 
+                className={`transition-all duration-300 ${
+                  index === currentProblem 
+                    ? 'w-12 h-3 bg-gradient-to-r from-red-500 to-purple-500 rounded-full' 
+                    : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full'
+                }`} 
+              />
+            ))}
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Problems;
