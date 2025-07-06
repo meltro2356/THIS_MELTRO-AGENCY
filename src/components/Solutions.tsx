@@ -5,14 +5,14 @@ const Solutions = () => {
     {
       icon: <Target className="h-10 w-10 sm:h-12 sm:w-12 text-blue-500" />,
       title: "Transformamos indicações em fluxo constante de novos clientes",
-      description: "Apareça primeiro quando pesquisam 'emergência veterinária' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
+      description: "Com campanhas de tráfego pago estratégicas e posicionamento digital, sua clínica deixa de depender só do boca a boca. Você atrai quem realmente precisa dos seus serviços — todo dia.",
       results: "+250% em consultas de emergência",
       color: "from-blue-400 to-blue-600"
     },
     {
       icon: <Zap className="h-10 w-10 sm:h-12 sm:w-12 text-yellow-500" />,
       title: "Defendemos seu território das franquias gigantes",
-      description: "Antecipamos feriados, férias escolares e épocas de pico. Sua creche e hotel lotados nos momentos de maior demanda.",
+      description: "Criamos campanhas personalizadas que reforçam o valor da sua marca local. Sua clínica se posiciona como referência e fideliza clientes antes mesmo que a concorrência apareça.",
       results: "95% de ocupação em feriados",
       color: "from-yellow-400 to-orange-500"
     },
@@ -26,7 +26,7 @@ const Solutions = () => {
     {
       icon: <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-green-500" />,
       title: "Investimento que retorna",
-      description: "Ortopedia, dermatologia, cardiologia... Criamos autoridade para cada especialidade e atraímos casos complexos e bem remunerados.",
+      description: "Marketing feito com inteligência: sem achismo, sem jogar dinheiro fora. Toda ação é pensada pra trazer retorno. Montamos seu funil com foco em agendamentos, recorrência e venda de serviços de maior margem.",
       results: "Fluxo constante de especialidades",
       color: "from-green-400 to-teal-500"
     }
