@@ -1,8 +1,15 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import NotificationForm from '@/components/NotificationForm';
 import { Construction, Calendar, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+
 const EstudosCaso = () => {
-  return <div className="min-h-screen bg-white">
+  const [isNotificationFormOpen, setIsNotificationFormOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -69,7 +76,10 @@ const EstudosCaso = () => {
                 <span className="font-semibold">Previsão de lançamento: Março 2026</span>
               </div>
 
-              <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
+              <button 
+                onClick={() => setIsNotificationFormOpen(true)}
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+              >
                 Ser Notificado do Lançamento
               </button>
             </div>
@@ -109,6 +119,13 @@ const EstudosCaso = () => {
       </section>
 
       <Footer />
-    </div>;
+      
+      <NotificationForm
+        isOpen={isNotificationFormOpen}
+        onClose={() => setIsNotificationFormOpen(false)}
+      />
+    </div>
+  );
 };
+
 export default EstudosCaso;
