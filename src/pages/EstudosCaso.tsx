@@ -66,7 +66,7 @@ const EstudosCaso = () => {
 
               <div className="flex items-center justify-center text-orange-500 mb-6">
                 <Calendar className="h-5 w-5 mr-2" />
-                <span className="font-semibold">Previsão de lançamento: Janeiro 2026</span>
+                <span className="font-semibold">Previsão de lançamento: Março 2026</span>
               </div>
 
               <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
