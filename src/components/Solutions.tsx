@@ -4,14 +4,14 @@ const Solutions = () => {
   const solutions = [
     {
       icon: <Target className="h-10 w-10 sm:h-12 sm:w-12 text-blue-500" />,
-      title: "Google Ads Hiperlocal",
+      title: "Transformamos indicações em fluxo constante de novos clientes",
       description: "Apareça primeiro quando pesquisam 'emergência veterinária' + sua cidade às 2h da manhã. Dominação total das buscas de urgência.",
       results: "+250% em consultas de emergência",
       color: "from-blue-400 to-blue-600"
     },
     {
       icon: <Zap className="h-10 w-10 sm:h-12 sm:w-12 text-yellow-500" />,
-      title: "Campanhas Sazonais Inteligentes",
+      title: "Defendemos seu território das franquias gigantes",
       description: "Antecipamos feriados, férias escolares e épocas de pico. Sua creche e hotel lotados nos momentos de maior demanda.",
       results: "95% de ocupação em feriados",
       color: "from-yellow-400 to-orange-500"
@@ -25,7 +25,7 @@ const Solutions = () => {
     },
     {
       icon: <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-green-500" />,
-      title: "Especialidades em Destaque",
+      title: "Investimento que retorna",
       description: "Ortopedia, dermatologia, cardiologia... Criamos autoridade para cada especialidade e atraímos casos complexos e bem remunerados.",
       results: "Fluxo constante de especialidades",
       color: "from-green-400 to-teal-500"
