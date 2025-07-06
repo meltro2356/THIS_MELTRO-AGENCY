@@ -23,7 +23,7 @@ const Problems = () => {
   }, {
     icon: <TrendingDown className="h-16 w-16 sm:h-20 sm:w-20 text-purple-500" />,
     title: "Margens apertadas e medo de investir errado",
-    description: "Já gastou com agência que prometeu o mundo e não entregou nem 10 curtidas? A gente entende. Por isso, trabalhamos com estratégias testadas, focadas em atrair clientes reais",
+    description: "Já gastou com agência que prometeu o mundo e não entregou nem 10 curtidas? A gente entende. Por isso, trabalhamos com estratégias validadas, focadas em atrair clientes reais",
     audience: "Serviços Premium",
     color: "from-purple-500 to-purple-600",
     bgColor: "bg-purple-50"
