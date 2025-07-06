@@ -1,3 +1,4 @@
+
 import { Target, Zap, Crown, TrendingUp } from 'lucide-react';
 
 const Solutions = () => {
@@ -27,7 +28,7 @@ const Solutions = () => {
       icon: <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-green-500" />,
       title: "Investimento que retorna",
       description: "Marketing feito com inteligência: sem achismo, sem jogar dinheiro fora. Toda ação é pensada pra trazer retorno. Montamos seu funil com foco em agendamentos, recorrência e venda de serviços de maior margem.",
-      results: "Fluxo constante de especialidades",
+      results: "obtenha ROI com margem de LUCRO",
       color: "from-green-400 to-teal-500"
     }
   ];
