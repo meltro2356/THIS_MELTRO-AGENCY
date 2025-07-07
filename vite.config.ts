@@ -20,8 +20,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-export default defineConfig({
-  base: "/THIS_MELTRO-AGENCY/", // https://github.com/meltro2356
-  ...
-})
-
