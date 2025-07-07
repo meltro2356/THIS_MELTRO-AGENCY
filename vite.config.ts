@@ -19,4 +19,11 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+}));import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/THIS_MELTRO-AGENCY/', // THIS_MELTRO-AGENCY
+  plugins: [react()],
+})
+
