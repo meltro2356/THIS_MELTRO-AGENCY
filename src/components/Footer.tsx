@@ -1,6 +1,7 @@
 
 import { Instagram, Facebook, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '@/lib/assets';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png" 
+                src={getAssetPath("/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png")} 
                 alt="Meltro Agency"
                 className="h-10 sm:h-12 w-auto"
               />
