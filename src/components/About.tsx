@@ -1,13 +1,11 @@
 
-import { getAssetPath } from '@/lib/assets';
-
 const About = () => {
   return <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img alt="Fundador da Meltro Agency" className="w-80 h-80 mx-auto rounded-full object-cover shadow-2xl" src={getAssetPath("/lovable-uploads/0082c4d5-8313-4c74-961b-018d432117e6.png")} />
+              <img alt="Fundador da Meltro Agency" className="w-80 h-80 mx-auto rounded-full object-cover shadow-2xl" src="/lovable-uploads/0082c4d5-8313-4c74-961b-018d432117e6.png" />
             </div>
             
             <div>

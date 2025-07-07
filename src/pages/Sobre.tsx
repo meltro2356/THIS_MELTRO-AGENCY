@@ -1,7 +1,6 @@
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getAssetPath } from '@/lib/assets';
 const Sobre = () => {
   const valores = [{
     icon: <Target className="h-8 w-8 text-orange-600" />,
@@ -44,7 +43,7 @@ const Sobre = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img alt="Fundador da Meltro Agency" className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-2xl" src={getAssetPath("/lovable-uploads/fdbcb44d-372d-4a67-9b81-78fbce8d99d7.png")} />
+                <img alt="Fundador da Meltro Agency" className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-2xl" src="/lovable-uploads/fdbcb44d-372d-4a67-9b81-78fbce8d99d7.png" />
               </div>
               
               <div>
