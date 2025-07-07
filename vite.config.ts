@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/THIS_MELTRO-AGENCY/',
   server: {
     host: "::",
     port: 8080,
@@ -19,11 +20,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  base: '/THIS_MELTRO-AGENCY/', // THIS_MELTRO-AGENCY
-  plugins: [react()],
-})
-
+}));
