@@ -1,6 +1,7 @@
 
 import { ArrowRight, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { getAssetPath } from '@/lib/assets';
 
 const CTA = () => {
   const handleWhatsAppClick = () => {
@@ -9,7 +10,7 @@ const CTA = () => {
 
   return (
     <section className="py-20 relative overflow-hidden" style={{
-      backgroundImage: 'url(/lovable-uploads/b74c338f-1861-4bc9-804f-9eff092d02e7.png)',
+      backgroundImage: `url(${getAssetPath('/lovable-uploads/b74c338f-1861-4bc9-804f-9eff092d02e7.png')})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

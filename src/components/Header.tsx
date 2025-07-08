@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { getAssetPath } from '@/lib/assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png" 
+              src={getAssetPath("/lovable-uploads/48dbf628-24e0-4d2e-afd1-35f480d46e60.png")} 
               alt="Meltro Agency"
               className="h-10 sm:h-12 w-auto"
             />
