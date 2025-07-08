@@ -52,12 +52,12 @@ const AIServicesSection = () => {
       description: "Consultoria especializada para implementação e otimização de todas as soluções.",
       shortDescription: "Consultoria especializada para implementação e otimização de todas as soluções de IA e automação.",
       features: [
-        "Análise estratégica personalizada",
+        "Growth hacking com auxílio de IA para maximizar as chances de sucesso",
         "Implementação guiada",
-        "Treinamento da equipe",
+        "Acompanhamento dos resultados",
         "Suporte contínuo"
       ],
-      detailedInfo: "Nossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos.",
+      detailedInfo: "Obtenha um Parceiro Estratégico e sinta na pele o por que é muito Melhor que uma Solução 100% Automatizada\n\nNossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos.",
       color: "from-indigo-400 to-purple-500"
     }
   ];
