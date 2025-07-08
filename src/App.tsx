@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.DEV ? '/' : '/THIS_MELTRO-AGENCY'}>
+      <BrowserRouter basename={import.meta.env.DEV ? undefined : '/THIS_MELTRO-AGENCY'}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/servicos" element={<Servicos />} />
