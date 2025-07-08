@@ -93,5 +93,24 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Ensure responsive images and prevent layout shift */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Improve mobile touch targets */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+    }
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
   }
 }
