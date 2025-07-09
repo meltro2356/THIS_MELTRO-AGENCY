@@ -6,10 +6,6 @@
 export const getAssetPath = (path: string): string => {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
   
-  if (import.meta.env.DEV) {
-    return cleanPath;
-  }
-  
-  // In production, prepend the base path for GitHub Pages
+  // Always use the full GitHub Pages path for consistency
   return `/THIS_MELTRO-AGENCY${cleanPath}`;
 };
