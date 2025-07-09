@@ -1,11 +1,10 @@
 /**
  * Get the correct asset path based on the current environment
- * In development: uses absolute path from root
- * In production (GitHub Pages): includes the base path
  */
 export const getAssetPath = (path: string): string => {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  // Remove leading slash if present
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // Always use the full GitHub Pages path for consistency
-  return `/THIS_MELTRO-AGENCY${cleanPath}`;
+  // For GitHub Pages, assets are served from the repo root
+  return cleanPath;
 };
